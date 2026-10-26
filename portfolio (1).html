@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Syed Tahoor Alam | Cloud &amp; DevOps</title>
+<script>document.documentElement.classList.add("js")</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#f4f5fc;--fg:#12142a;--mut:#585f88;--card:rgba(255,255,255,.72);--bd:rgba(60,70,150,.16);--a:#6d5efc;--b:#0ea5c6;--c:#e83e8c;--nav:rgba(244,245,252,.8);--dot:109,94,252;color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#070816;--fg:#eceeff;--mut:#9aa0c8;--card:rgba(20,22,52,.62);--bd:rgba(150,160,255,.17);--a:#8b7cff;--b:#22d3ee;--c:#ff6ac1;--nav:rgba(7,8,22,.74);--dot:139,124,255;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#070816;--fg:#eceeff;--mut:#9aa0c8;--card:rgba(20,22,52,.62);--bd:rgba(150,160,255,.17);--a:#8b7cff;--b:#22d3ee;--c:#ff6ac1;--nav:rgba(7,8,22,.74);--dot:139,124,255;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(80px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font:16px/1.65 "Space Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--fg);overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--nav);backdrop-filter:blur(14px)}
+nav{position:fixed;top:0;left:0;right:0;z-index:11;display:flex;align-items:center;justify-content:space-between;padding:calc(12px + env(safe-area-inset-top,0px)) 22px 12px;background:var(--nav);backdrop-filter:blur(14px);border-bottom:1px solid var(--bd)}
+.logo{font:600 1.05rem "JetBrains Mono",monospace;color:var(--a);text-decoration:none}
+.nl{display:flex;align-items:center}
+.nl a{color:var(--mut);text-decoration:none;margin-left:24px;font-size:.93rem;transition:color .2s}.nl a:hover{color:var(--fg)}
+#tt{margin-left:20px;background:var(--card);border:1px solid var(--bd);color:var(--fg);width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:1rem}
+a:focus-visible,button:focus-visible{outline:2px solid var(--a);outline-offset:3px}
+.aur{position:fixed;inset:0;z-index:-2;overflow:hidden;pointer-events:none}
+.aur i{position:absolute;width:55vmax;height:55vmax;border-radius:50%;filter:blur(90px);opacity:.32;animation:fl 20s ease-in-out infinite alternate}
+.aur i:nth-child(1){background:var(--a);top:-20%;left:-10%}
+.aur i:nth-child(2){background:var(--b);bottom:-25%;right:-15%;animation-delay:-7s}
+.aur i:nth-child(3){background:var(--c);top:38%;left:42%;width:34vmax;height:34vmax;opacity:.2;animation-delay:-13s}
+@keyframes fl{to{transform:translate(8vw,6vh) scale(1.2) rotate(40deg)}}
+#net{position:fixed;inset:0;z-index:-1;pointer-events:none;width:100%;height:100%}
+.glow{position:fixed;width:420px;height:420px;margin:-210px 0 0 -210px;border-radius:50%;background:radial-gradient(rgba(var(--dot),.17),transparent 65%);pointer-events:none;z-index:0;left:-999px;top:0}
+section{position:relative;z-index:1;max-width:1080px;margin:auto;padding:84px 22px}
+#hero{min-height:100vh;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding-top:120px}
+.hi{font:600 .95rem "JetBrains Mono",monospace;color:var(--b)}
+h1{font-size:clamp(2.7rem,8vw,5.3rem);line-height:1.02;font-weight:700;letter-spacing:-.02em;margin:10px 0 14px;background:linear-gradient(100deg,var(--a),var(--b),var(--c),var(--a));background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sh 8s linear infinite}
+@keyframes sh{to{background-position:300% 0}}
+.role{font:600 clamp(1.1rem,3vw,1.55rem) "JetBrains Mono",monospace;min-height:2.3em}
+.role::after{content:"\258D";animation:bl 1s steps(2) infinite;color:var(--a)}
+@keyframes bl{50%{opacity:0}}
+.lead{color:var(--mut);max-width:520px;margin:10px 0 28px;font-size:1.05rem}
+.btn{display:inline-block;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;color:var(--fg);border:1px solid var(--bd);background:var(--card);backdrop-filter:blur(8px);transition:transform .25s;margin:0 10px 10px 0}
+.btn.p{background:linear-gradient(120deg,var(--a),var(--b));color:#fff;border:0;box-shadow:0 10px 30px -10px var(--a)}
+.btn:hover{transform:translateY(-3px) scale(1.04)}
+.term{background:#0b0d24;color:#d8dcff;border-radius:16px;border:1px solid rgba(150,160,255,.25);box-shadow:0 30px 80px -30px var(--a);font:13.5px/1.85 "JetBrains Mono",monospace;overflow:hidden;animation:fy 6s ease-in-out infinite alternate}
+.bar{display:flex;gap:7px;padding:12px 14px;background:rgba(255,255,255,.06)}
+.bar i{width:11px;height:11px;border-radius:50%;background:#ff5f57}.bar i:nth-child(2){background:#febc2e}.bar i:nth-child(3){background:#28c840}
+.term pre{padding:16px 18px;min-height:215px;white-space:pre-wrap;font:inherit}
+@keyframes fy{to{transform:translateY(-12px) rotate(-.6deg)}}
+.ok{color:#4ade80}.dm{color:#8b90c0}
+h2{font-size:clamp(1.8rem,5vw,2.8rem);line-height:1.15;letter-spacing:-.01em;margin-bottom:10px}
+.sub{color:var(--mut);margin-bottom:34px;max-width:640px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:22px;backdrop-filter:blur(10px);transition:transform .2s,border-color .2s;display:block}
+.card:hover{border-color:var(--a)}
+.card h3{font-size:1.18rem;margin:4px 0 8px}
+.card p{color:var(--mut);font-size:.95rem}
+.date{font:.8rem "JetBrains Mono",monospace;color:var(--b)}
+.feat{grid-column:1/-1;background:linear-gradient(135deg,rgba(var(--dot),.16),var(--card))}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
+.tags span,.chip{padding:5px 13px;border:1px solid var(--bd);border-radius:999px;background:var(--card);font-size:.85rem}
+.lk{display:inline-block;margin-top:14px;color:var(--a);font-weight:700;text-decoration:none}.lk:hover{text-decoration:underline}
+.mq{overflow:hidden;border-block:1px solid var(--bd);padding:16px 0;position:relative;z-index:1;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.mq div{display:flex;width:max-content;animation:mq 32s linear infinite}
+.mq .chip{margin-right:14px;font-size:.95rem;padding:8px 18px;white-space:nowrap}
+@keyframes mq{to{transform:translateX(-50%)}}
+.sc{overflow-x:auto}.sc svg{display:block;width:100%;min-width:640px}
+.ln{stroke:var(--b);stroke-width:2.5;stroke-dasharray:8 8;fill:none;animation:df 1s linear infinite}
+@keyframes df{to{stroke-dashoffset:-16}}
+.dotp{fill:var(--c)}
+.nd rect{fill:var(--bg);stroke:var(--a);stroke-width:1.6}
+.nt{fill:var(--fg);font:700 19px "Space Grotesk",sans-serif;text-anchor:middle}
+.ns{fill:var(--mut);font:12.5px "Space Grotesk",sans-serif;text-anchor:middle}
+.big{text-align:center;padding-bottom:60px}.big p{color:var(--mut);margin:8px auto 28px;max-width:520px}
+footer{position:relative;z-index:1;text-align:center;color:var(--mut);font-size:.88rem;padding:10px 22px 40px}
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s}.js .rv.in{opacity:1;transform:none}
+@media(max-width:760px){#hero{grid-template-columns:1fr;padding-top:110px}.nl a{display:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="aur"><i></i><i></i><i></i></div>
+<canvas id="net"></canvas>
+<div class="glow"></div>
+<nav><a class="logo" href="#hero">&lt;ST/&gt;</a><div class="nl"><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a><button id="tt" aria-label="Switch light or dark theme">&#9680;</button></div></nav>
+
+<section id="hero">
+  <div>
+    <p class="hi">// hello world, I am</p>
+    <h1>Syed Tahoor Alam</h1>
+    <p class="role" aria-label="Cloud Engineer and DevOps Enthusiast"></p>
+    <p class="lead">I build, containerize and automate cloud infrastructure on AWS, from Docker images to Jenkins pipelines that ship code without the manual steps.</p>
+    <a class="btn p" href="#projects">See my projects</a><a class="btn" href="https://github.com/tahoorBuilds" target="_blank" rel="noopener">GitHub</a><a class="btn" href="https://www.linkedin.com/in/syed-tahoor" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+  <div class="term" aria-hidden="true"><div class="bar"><i></i><i></i><i></i></div><pre></pre></div>
+</section>
+
+<div class="mq" aria-hidden="true"><div></div></div>
+
+<section id="about">
+  <h2 class="rv">From commit to cloud, automated.</h2>
+  <p class="sub rv">MCA student with hands-on experience provisioning AWS services (EC2, S3, IAM), containerizing apps with Docker and automating CI/CD with Jenkins and Git. Comfortable with Linux administration, shell scripting and databases. Looking for Cloud and DevOps internships and junior roles.</p>
+  <div class="card rv"><div class="sc">
+  <svg viewBox="0 0 900 170" role="img" aria-label="Simplified pipeline: Git to Jenkins to Docker to AWS EC2 to S3 and IAM">
+    <path class="ln" d="M80 85H780"/>
+    <circle class="dotp" r="7"><animateMotion dur="5s" repeatCount="indefinite" path="M80 85H780"/></circle>
+    <g class="nd"><rect x="10" y="45" width="140" height="80" rx="16"/><text class="nt" x="80" y="83">Git</text><text class="ns" x="80" y="106">version control</text></g>
+    <g class="nd"><rect x="185" y="45" width="140" height="80" rx="16"/><text class="nt" x="255" y="83">Jenkins</text><text class="ns" x="255" y="106">CI/CD pipeline</text></g>
+    <g class="nd"><rect x="360" y="45" width="140" height="80" rx="16"/><text class="nt" x="430" y="83">Docker</text><text class="ns" x="430" y="106">containers</text></g>
+    <g class="nd"><rect x="535" y="45" width="140" height="80" rx="16"/><text class="nt" x="605" y="83">AWS EC2</text><text class="ns" x="605" y="106">app hosting</text></g>
+    <g class="nd"><rect x="710" y="45" width="140" height="80" rx="16"/><text class="nt" x="780" y="83">S3 + IAM</text><text class="ns" x="780" y="106">storage and access</text></g>
+  </svg></div>
+  <p style="margin-top:10px">A simplified view of how my projects move from code to the cloud.</p></div>
+</section>
+
+<section id="projects">
+  <h2 class="rv">Things I have built</h2>
+  <p class="sub rv">Real projects across cloud, backend and frontend.</p>
+  <div class="grid rv">
+    <div class="card feat"><span class="date">May to Jul 2026 · Featured</span><h3>EchoMate Lite</h3><p>A lightweight social media web app where people create accounts, manage profiles, write posts and interact with each other. Built with Flask and MySQL, containerized with Docker and deployed on AWS.</p><div class="tags"><span>Flask</span><span>MySQL</span><span>Docker</span><span>AWS</span><span>Jenkins</span></div><a class="lk" href="https://github.com/tahoorBuilds/EchoMateLite" target="_blank" rel="noopener">View the code on GitHub</a></div>
+    <div class="card"><span class="date">Jan to Jul 2026 · Jain University</span><h3>Cloud Computing Project Intern</h3><p>Deployed backend infrastructure on EC2, S3 and IAM, containerized components with Docker, built Git and Jenkins CI/CD pipelines and managed Linux servers with shell scripting.</p><div class="tags"><span>AWS</span><span>Docker</span><span>Jenkins</span><span>Linux</span></div></div>
+    <div class="card"><span class="date">Apr to Jun 2024</span><h3>E-Commerce Website</h3><p>Handled database management and AWS-based deployment for an online store, and worked with the team to monitor performance and fix deployment issues.</p><div class="tags"><span>DBMS</span><span>AWS</span></div></div>
+    <div class="card"><span class="date">Aug to Nov 2023</span><h3>Railway Reservation App</h3><p>Designed a responsive interface to search and book train tickets, integrated APIs with backend developers and tested the UI across devices.</p><div class="tags"><span>Frontend</span><span>API integration</span><span>Responsive UI</span></div></div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="rv">Skills</h2>
+  <p class="sub rv">The tools I use to build and ship.</p>
+  <div class="grid rv">
+    <div class="card"><h3>Cloud</h3><div class="tags"><span>AWS EC2</span><span>AWS S3</span><span>AWS IAM</span></div></div>
+    <div class="card"><h3>DevOps</h3><div class="tags"><span>Docker</span><span>Jenkins</span><span>Git</span><span>CI/CD</span><span>Kubernetes</span></div></div>
+    <div class="card"><h3>Systems</h3><div class="tags"><span>Linux administration</span><span>Shell scripting</span><span>Networking</span><span>Troubleshooting</span></div></div>
+    <div class="card"><h3>Build and data</h3><div class="tags"><span>Python</span><span>Flask</span><span>MySQL</span><span>DBMS</span><span>HTML</span><span>Data analysis</span></div></div>
+  </div>
+</section>
+
+<section id="learning">
+  <h2 class="rv">Courses and education</h2>
+  <p class="sub rv">Structured learning that backs up the hands-on work.</p>
+  <div class="grid rv">
+    <div class="card"><h3>AWS Cloud Practitioner Essentials</h3><p>AWS Training and Certification</p></div>
+    <div class="card"><h3>AWS Certified Cloud Practitioner (CLF-C02) Cert Prep</h3><p>LinkedIn Learning</p></div>
+    <div class="card"><h3>Microsoft Azure Fundamentals (AZ-900) Cert Prep</h3><p>LinkedIn Learning</p></div>
+    <div class="card"><h3>Docker Essential Training</h3><p>LinkedIn Learning</p></div>
+    <div class="card"><h3>Programming with Python</h3><p>Internshala Trainings, 2023</p></div>
+    <div class="card"><h3>MCA (Online)</h3><p>Jain (Deemed-to-be) University · 8.0 CGPA</p></div>
+    <div class="card"><h3>Bachelor of Computer Applications</h3><p>Integral University · 8.0 CGPA</p></div>
+  </div>
+</section>
+
+<section id="contact" class="big">
+  <h2 class="rv">Let’s build something in the cloud.</h2>
+  <p class="rv">Open to Cloud and DevOps internships and junior roles. Send me a message and I will reply soon.</p>
+  <div class="rv"><a class="btn p" href="mailto:syedtahoor023@gmail.com">Email me</a><a class="btn" href="https://www.linkedin.com/in/syed-tahoor" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://github.com/tahoorBuilds" target="_blank" rel="noopener">GitHub</a></div>
+</section>
+<footer>© 2026 Syed Tahoor Alam</footer>
+
+<script>
+(()=>{
+const $=s=>document.querySelector(s),r=document.documentElement,rm=matchMedia("(prefers-reduced-motion: reduce)").matches,mq=matchMedia("(prefers-color-scheme: dark)");
+const getDot=()=>getComputedStyle(r).getPropertyValue("--dot").trim();
+let dot=getDot();
+const dark=()=>r.dataset.theme?r.dataset.theme==="dark":mq.matches;
+$("#tt").onclick=()=>{r.dataset.theme=dark()?"light":"dark";dot=getDot()};
+mq.onchange=()=>{dot=getDot()};
+/* skills marquee */
+const sk=["AWS EC2","S3","IAM","Docker","Jenkins","Git","CI/CD","Kubernetes","Linux","Shell scripting","Python","Flask","MySQL","Networking"];
+$(".mq div").innerHTML=[...sk,...sk].map(s=>'<span class="chip">'+s+'</span>').join("");
+/* typed roles */
+const roles=["Cloud Engineer","DevOps Enthusiast","AWS, Docker, Jenkins","Automation Lover"],ro=$(".role");
+let ri=0,ci=0,del=false;
+function t(){const w=roles[ri];ci+=del?-1:1;ro.textContent=w.slice(0,ci);let d=del?35:75;if(!del&&ci===w.length){del=true;d=1400}else if(del&&ci===0){del=false;ri=(ri+1)%roles.length;d=300}setTimeout(t,d)}
+rm?ro.textContent=roles[0]:t();
+/* terminal */
+const L=['<span class="dm">$</span> git push origin main','<span class="dm">&#9656;</span> jenkins: pipeline triggered','<span class="dm">&#9656;</span> docker build -t echomate-lite .','<span class="ok">&#10004;</span> image built','<span class="dm">&#9656;</span> deploying to aws ec2 ...','<span class="ok">&#10004; live on the cloud</span>'];
+const tp=$(".term pre");let li=0;
+function nx(){if(li>=L.length){if(!rm)setTimeout(()=>{tp.innerHTML="";li=0;nx()},2800);return}tp.innerHTML+=(li?"\n":"")+L[li++];setTimeout(nx,rm?0:750)}
+nx();
+/* network canvas */
+const cv=$("#net"),x=cv.getContext("2d"),g=$(".glow");let W=0,H,P=[],m={x:-999,y:-999};
+function rs(){W=cv.width=innerWidth;H=cv.height=innerHeight;P=Array.from({length:Math.min(70,W/18|0)},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.5,vy:(Math.random()-.5)*.5}))}
+rs();addEventListener("resize",()=>{if(innerWidth!==W)rs()});
+addEventListener("pointermove",e=>{m.x=e.clientX;m.y=e.clientY;g.style.left=m.x+"px";g.style.top=m.y+"px"});
+function dr(){x.clearRect(0,0,W,H);for(const p of P){if(!rm){p.x+=p.vx;p.y+=p.vy}if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1;x.fillStyle="rgba("+dot+",.8)";x.beginPath();x.arc(p.x,p.y,1.8,0,7);x.fill();
+for(const q of P){const d=Math.hypot(p.x-q.x,p.y-q.y);if(d<130){x.strokeStyle="rgba("+dot+","+(1-d/130)*.35+")";x.beginPath();x.moveTo(p.x,p.y);x.lineTo(q.x,q.y);x.stroke()}}
+const dm=Math.hypot(p.x-m.x,p.y-m.y);if(dm<170){x.strokeStyle="rgba("+dot+","+(1-dm/170)*.7+")";x.beginPath();x.moveTo(p.x,p.y);x.lineTo(m.x,m.y);x.stroke()}}
+if(!rm)requestAnimationFrame(dr)}
+dr();
+/* reveal */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll(".rv").forEach(e=>io.observe(e));
+/* card tilt */
+document.querySelectorAll(".card").forEach(c=>{c.onpointermove=e=>{if(rm||e.pointerType==="touch")return;const b=c.getBoundingClientRect(),px=(e.clientX-b.left)/b.width-.5,py=(e.clientY-b.top)/b.height-.5;c.style.transform="perspective(700px) rotateY("+px*9+"deg) rotateX("+-py*9+"deg) translateY(-4px)"};c.onpointerleave=()=>{c.style.transform=""}});
+})();
+</script>
+</body>
+</html>
